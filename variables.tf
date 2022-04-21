@@ -82,22 +82,16 @@ variable "vnet_name" {
   default     = "acctvnet"
 }
 
-variable "resource_group_name" {
-  description = "The name of an existing resource group to be imported."
-  type        = string
-}
+#variable "resource_group_name" {
+#  description = "The name of an existing resource group to be imported."
+#  type        = string
+#}
 
-variable "address_space" {
-  description = "The address space that is used by the virtual network."
-  type        = string
-  default     = "10.0.0.0/16"
-}
-
-variable "address_spaces" {
-  description = "The list of the address spaces that is used by the virtual network."
-  type        = list(string)
-  default     = []
-}
+#variable "address_spaces" {
+#  description = "The list of the address spaces that is used by the virtual network."
+#  type        = list(string)
+#  default     = []
+#}
 
 # If no values specified, this defaults to Azure DNS 
 variable "dns_servers" {
